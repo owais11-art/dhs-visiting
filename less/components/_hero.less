@@ -1,0 +1,74 @@
+@head-font-size: 3.3125rem;
+
+@head-line-height: 4.375rem;
+
+@para-font-size: 1.625rem;
+
+@para-line-height: 2.75rem;
+
+.hero{
+    height: 100vh - 5px;
+    background: url('../../assets/images/main-bg.png') no-repeat center center / cover;
+    .company-logo{
+        width: 278px;
+        height: 64px;
+        padding-top: 40px;
+    }
+    &__heading{
+        font-family: @garamond;
+        color: @text-color-light;
+        font-weight: 500;
+        font-size: @head-font-size - .8rem;
+        line-height: @head-line-height - .8rem;
+        margin-top: 80px;
+        width: 100%;
+        @media @sm{
+            width: 80%;
+        }
+        @media @md{
+            // margin-top: 100px;
+            font-size: @head-font-size - .5rem;
+            width: 70%;
+            line-height: @head-line-height - .3rem;
+        }
+        @media @lg{
+            font-size: @head-font-size;
+            width: 60%;
+            line-height: @head-line-height;
+        }
+    }
+    &__para{
+        font-family: @raleway;
+        font-size: @para-font-size - .5rem;
+        line-height: @para-line-height - 1rem;
+        color: @text-color-light;
+        width: 100%;
+        margin-top: 18px;
+        @media @sm{
+            width: 80%;
+        }
+        @media @md{
+            font-size: @para-font-size - .2rem;
+            line-height: @para-line-height - .3rem;
+            width: 65%;
+        }
+        @media @lg{
+            font-size: @para-font-size;
+            line-height: @para-line-height;
+            width: 55%;
+        }
+
+    }
+    &__btn{
+        border: none;
+        width: 330px;
+        height: 74px;
+        border-radius: 5px;
+        background-color: @button-color;
+        color: @text-color-light;
+        font-family: @raleway;
+        font-weight: 600;
+        font-size: 26px;
+        margin-top: 36px;
+    }
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v26/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-2fRUAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoooCP.ttf) format('truetype');
+}
+/*====================================Reset====================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+p {
+  font-family: 'Raleway';
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.box {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 765px) {
+  .box {
+    width: 85%;
+  }
+}
+/*============================Components============================*/
+.hero {
+  height: 95vh;
+  background: url('../../assets/images/main-bg.png') no-repeat center center / cover;
+}
+.hero .company-logo {
+  width: 278px;
+  height: 64px;
+  padding-top: 40px;
+}
+.hero__heading {
+  font-family: 'EB Garamond';
+  color: hsl(227, 63%, 96%);
+  font-weight: 500;
+  font-size: 2.5125rem;
+  line-height: 3.575rem;
+  margin-top: 80px;
+  width: 100%;
+}
+@media (min-width: 450px) {
+  .hero__heading {
+    width: 80%;
+  }
+}
+@media (min-width: 765px) {
+  .hero__heading {
+    font-size: 2.8125rem;
+    width: 70%;
+    line-height: 4.075rem;
+  }
+}
+@media (min-width: 900px) {
+  .hero__heading {
+    font-size: 3.3125rem;
+    width: 60%;
+    line-height: 4.375rem;
+  }
+}
+.hero__para {
+  font-family: 'Raleway';
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: hsl(227, 63%, 96%);
+  width: 100%;
+  margin-top: 18px;
+}
+@media (min-width: 450px) {
+  .hero__para {
+    width: 80%;
+  }
+}
+@media (min-width: 765px) {
+  .hero__para {
+    font-size: 1.425rem;
+    line-height: 2.45rem;
+    width: 65%;
+  }
+}
+@media (min-width: 900px) {
+  .hero__para {
+    font-size: 1.625rem;
+    line-height: 2.75rem;
+    width: 55%;
+  }
+}
+.hero__btn {
+  border: none;
+  width: 330px;
+  height: 74px;
+  border-radius: 5px;
+  background-color: hsl(202, 85%, 52%);
+  color: hsl(227, 63%, 96%);
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 36px;
+}

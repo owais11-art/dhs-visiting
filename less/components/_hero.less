@@ -22,40 +22,47 @@
         line-height: @head-line-height - .8rem;
         margin-top: 80px;
         width: 100%;
+        // min-width: 400px;
         @media @sm{
+            font-size: @head-font-size - .6rem;
             width: 80%;
+            min-width: 400px;
         }
         @media @md{
             // margin-top: 100px;
-            font-size: @head-font-size - .5rem;
+            font-size: @head-font-size - .8rem;
             width: 70%;
+            min-width: 495px;
             line-height: @head-line-height - .3rem;
         }
         @media @lg{
             font-size: @head-font-size;
-            width: 60%;
+            width: 675px;
             line-height: @head-line-height;
         }
     }
     &__para{
         font-family: @raleway;
-        font-size: @para-font-size - .5rem;
+        font-size: @para-font-size - .7rem;
         line-height: @para-line-height - 1rem;
         color: @text-color-light;
         width: 100%;
+        min-width: 350px;
         margin-top: 18px;
         @media @sm{
             width: 80%;
+            font-size: @para-font-size - .5rem;
         }
         @media @md{
-            font-size: @para-font-size - .2rem;
+            font-size: @para-font-size - .5rem;
             line-height: @para-line-height - .3rem;
             width: 65%;
         }
         @media @lg{
             font-size: @para-font-size;
             line-height: @para-line-height;
-            width: 55%;
+            width: 57%;
+            min-width: 580px;
         }
 
     }
@@ -69,6 +76,6 @@
         font-family: @raleway;
         font-weight: 600;
         font-size: 26px;
-        margin-top: 36px;
+        margin-top: 16px;
     }
 }

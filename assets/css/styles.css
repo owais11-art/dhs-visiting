@@ -68,39 +68,44 @@ img {
 }
 @media (min-width: 450px) {
   .hero__heading {
+    font-size: 2.7125rem;
     width: 80%;
+    min-width: 400px;
   }
 }
 @media (min-width: 765px) {
   .hero__heading {
-    font-size: 2.8125rem;
+    font-size: 2.5125rem;
     width: 70%;
+    min-width: 495px;
     line-height: 4.075rem;
   }
 }
 @media (min-width: 900px) {
   .hero__heading {
     font-size: 3.3125rem;
-    width: 60%;
+    width: 675px;
     line-height: 4.375rem;
   }
 }
 .hero__para {
   font-family: 'Raleway';
-  font-size: 1.125rem;
+  font-size: 0.925rem;
   line-height: 1.75rem;
   color: hsl(227, 63%, 96%);
   width: 100%;
+  min-width: 350px;
   margin-top: 18px;
 }
 @media (min-width: 450px) {
   .hero__para {
     width: 80%;
+    font-size: 1.125rem;
   }
 }
 @media (min-width: 765px) {
   .hero__para {
-    font-size: 1.425rem;
+    font-size: 1.125rem;
     line-height: 2.45rem;
     width: 65%;
   }
@@ -109,7 +114,8 @@ img {
   .hero__para {
     font-size: 1.625rem;
     line-height: 2.75rem;
-    width: 55%;
+    width: 57%;
+    min-width: 580px;
   }
 }
 .hero__btn {
@@ -122,5 +128,5 @@ img {
   font-family: 'Raleway';
   font-weight: 600;
   font-size: 26px;
-  margin-top: 36px;
+  margin-top: 16px;
 }

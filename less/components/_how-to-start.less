@@ -1,0 +1,71 @@
+@content-head: 2.5rem;
+@list-size: 1.15rem;
+@list-line-height: 2.1875rem;
+.how-to-start{
+    padding: 60px 0;
+    &__wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__heading{
+        font-family: @raleway;
+        font-size: 58px;
+        font-weight: 700;
+        color: @text-color-dark;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        @media @lg{
+            flex-direction: row;
+        }
+        &:last-child{
+            flex-direction: column-reverse;
+            @media @lg{
+                flex-direction: row;
+            }
+        }
+        .content{
+            &__head{
+                font-family: @raleway;
+                font-weight: 700;
+                color: @text-color-dark;
+                font-size: @content-head - .7rem;
+                width: 100%;
+                @media @xl{
+                    width: 90%;
+                    font-size: @content-head;
+                }
+            }
+            &__list{
+                width: 70%;
+                li{
+                    font-family: @raleway;
+                    color: @text-color-dark;
+                    font-size: @list-size;
+                    line-height: @list-line-height;
+                    margin-left: 34px;
+                    margin-top: 25px;
+                    width: 120%;
+                    position: relative;
+                    &::before{
+                        content: url('../../assets/images/logos/check.svg');
+                        position: absolute;
+                        left: -34px;
+                        top: 5px;
+                    }
+                }
+            }
+            .second--head{
+                width: 100%;
+            }
+
+        }
+    }
+}

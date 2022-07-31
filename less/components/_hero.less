@@ -6,13 +6,16 @@
 
 @para-line-height: 2.75rem;
 
+/*===================================Hero Section===================================*/
+
 .hero{
-    height: 100vh - 5px;
+    // height: 100vh - 5px;
+    padding: 140px 0;
     background: url('../../assets/images/main-bg.png') no-repeat center center / cover;
     .company-logo{
         width: 278px;
         height: 64px;
-        padding-top: 40px;
+        margin-top: -80px;
     }
     &__heading{
         font-family: @garamond;
@@ -20,16 +23,14 @@
         font-weight: 500;
         font-size: @head-font-size - .8rem;
         line-height: @head-line-height - .8rem;
-        margin-top: 80px;
+        margin-top: 40px;
         width: 100%;
-        // min-width: 400px;
         @media @sm{
             font-size: @head-font-size - .6rem;
             width: 80%;
             min-width: 400px;
         }
         @media @md{
-            // margin-top: 100px;
             font-size: @head-font-size - .8rem;
             width: 70%;
             min-width: 495px;

@@ -1,0 +1,112 @@
+/*=================================Arrival Procedure Section=================================*/
+
+
+@procedure-size: 3.625rem;
+
+.arrival-procedure{
+    background-color: @procedure-bg-color;
+    padding: 60px 0;
+    padding-bottom: 120px;
+    &__heading{
+        font-family: @raleway;
+        font-weight: 700;
+        font-size: @procedure-size;
+        text-align: center;
+        color: @text-color-light;
+    }
+    &__sub-heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 25px;
+        .line{
+            display: none;
+            @media(min-width: 500px){
+                display: block;
+                width: 114px;
+                height: 0;
+                border: 1px solid @text-color-light;
+            }
+        }
+        p{
+            font-family: @raleway;
+            font-weight: 600;
+            font-size: 26px;
+            color: @text-color-light;
+            letter-spacing: 2px;
+        }
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        @media @xl{
+            flex-wrap: nowrap;
+            gap: 15px
+        }
+        .card{
+            background-color: @cards-bg-color;
+            width: 100%;
+            flex-grow: 1;
+            padding: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0px 34px 44px rgba(14, 48, 81, 0.59);
+            @media(min-width: 500px){
+                width: 45%;
+            }
+            @media @xl{
+                width: 25%;
+            }
+            .num-box{
+                width: 65px;
+                height: 58px;
+                background-color: @list-check-color;
+                color: @text-color-light;
+                font-family: @raleway;
+                font-size: 32px;
+                display: grid;
+                place-items: center;
+                margin: 0 auto;
+                margin-top: -40px;
+                border-radius: 0px 0px 5px 5px;
+                box-shadow: 0px 9px 24px rgba(214, 153, 34, 0.45);
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: -20px;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent @cards-fold @cards-fold transparent;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: -20px;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent transparent @cards-fold @cards-fold;
+                }
+            }
+            .content{
+                width: 70%;
+                margin: 0 auto;
+                font-family: @raleway;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 32px;
+                color: @text-color-dark;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .last{
+                font-size: 18px;
+            }
+        }
+    }
+}

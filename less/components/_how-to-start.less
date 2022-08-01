@@ -1,11 +1,16 @@
 @content-head: 2.5rem;
 @list-size: 1.15rem;
 @list-line-height: 2.1875rem;
+
+/*=================================How to Start Section=================================*/
 .how-to-start{
     padding: 60px 0;
     &__wrapper{
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
+        @media @md{
+            width: 80%;
+        }
     }
     &__heading{
         font-family: @raleway;
@@ -36,7 +41,7 @@
                 font-family: @raleway;
                 font-weight: 700;
                 color: @text-color-dark;
-                font-size: @content-head - .7rem;
+                font-size: @content-head - .9rem;
                 width: 100%;
                 @media @xl{
                     width: 90%;
